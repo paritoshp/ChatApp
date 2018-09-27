@@ -2,7 +2,7 @@ ChatApp
 
 ChatApp is an instant messaging application developed Swift which uses Firebase service to provide one-to-one conversation over the network. The server can be setup using Firebase Which will be used as Authentication server.
 
-Features
+Features:
 
 
 -	User Login using Username, Password.
