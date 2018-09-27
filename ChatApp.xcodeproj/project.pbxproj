@@ -21,6 +21,8 @@
 		053C86CA215A4869003AEFDB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053C86C8215A4869003AEFDB /* LoginViewController.xib */; };
 		053C86CD215A4FB4003AEFDB /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C86CB215A4FB4003AEFDB /* ContactsListViewController.swift */; };
 		053C86CE215A4FB4003AEFDB /* ContactsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053C86CC215A4FB4003AEFDB /* ContactsListViewController.xib */; };
+		05EC4D46215D3A48002F7CDC /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05EC4D44215D3A48002F7CDC /* SignInViewController.xib */; };
+		05EC4D47215D3A48002F7CDC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EC4D45215D3A48002F7CDC /* SignInViewController.swift */; };
 		555E2C4BABE9D95666EF6786 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E05ABFA347FCF8FD63F8A91 /* Pods_ChatApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		053C86C8215A4869003AEFDB /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		053C86CB215A4FB4003AEFDB /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 		053C86CC215A4FB4003AEFDB /* ContactsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsListViewController.xib; sourceTree = "<group>"; };
+		05EC4D44215D3A48002F7CDC /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		05EC4D45215D3A48002F7CDC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1E05ABFA347FCF8FD63F8A91 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		537B124F21047A03A2086660 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		7F6880FEFA99EBA9877D3014 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 		05095F21215A0E4600D2FCFE /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				05EC4D45215D3A48002F7CDC /* SignInViewController.swift */,
+				05EC4D44215D3A48002F7CDC /* SignInViewController.xib */,
 				05095F22215A0E4600D2FCFE /* AppDelegate.swift */,
 				05095F24215A0E4600D2FCFE /* ChatViewController.swift */,
 				05095F26215A0E4600D2FCFE /* Main.storyboard */,
@@ -279,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05EC4D46215D3A48002F7CDC /* SignInViewController.xib in Resources */,
 				05095F2D215A0E4800D2FCFE /* LaunchScreen.storyboard in Resources */,
 				05095F2A215A0E4800D2FCFE /* Assets.xcassets in Resources */,
 				053C86CA215A4869003AEFDB /* LoginViewController.xib in Resources */,
@@ -379,6 +386,7 @@
 			files = (
 				053C86C9215A4869003AEFDB /* LoginViewController.swift in Sources */,
 				05095F25215A0E4600D2FCFE /* ChatViewController.swift in Sources */,
+				05EC4D47215D3A48002F7CDC /* SignInViewController.swift in Sources */,
 				05095F23215A0E4600D2FCFE /* AppDelegate.swift in Sources */,
 				053C86C6215A20F9003AEFDB /* Constants.swift in Sources */,
 				053C86CD215A4FB4003AEFDB /* ContactsListViewController.swift in Sources */,

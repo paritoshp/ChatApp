@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="ChatApp" customModuleProvider="target">
+            <connections>
+                <outlet property="emailIDTextField" destination="zbB-5F-efF" id="e74-Gc-2WO"/>
+                <outlet property="passwordTextField" destination="Fm1-Tg-Ru8" id="XEB-vQ-cxc"/>
+                <outlet property="view" destination="qwu-wT-82m" id="J9t-Jx-tJl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qwu-wT-82m">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIb-oO-1Mg">
+                    <rect key="frame" x="35" y="137" width="305" height="26"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zbB-5F-efF">
+                    <rect key="frame" x="35" y="192.5" width="305" height="30"/>
+                    <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fm1-Tg-Ru8">
+                    <rect key="frame" x="35" y="246.5" width="305" height="30"/>
+                    <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7I-SP-3uj">
+                    <rect key="frame" x="92" y="338.5" width="191" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signUpButtonClicked:" destination="-1" eventType="touchUpInside" id="rBg-0K-vl5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mindstix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42q-Tc-OSs">
+                    <rect key="frame" x="92" y="533" width="191" height="52"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Fm1-Tg-Ru8" firstAttribute="leading" secondItem="7fg-iz-P9f" secondAttribute="leading" constant="35" id="40l-a4-sUC"/>
+                <constraint firstItem="zbB-5F-efF" firstAttribute="top" secondItem="RIb-oO-1Mg" secondAttribute="bottom" constant="29.5" id="8Co-vi-eCt"/>
+                <constraint firstItem="7fg-iz-P9f" firstAttribute="trailing" secondItem="RIb-oO-1Mg" secondAttribute="trailing" constant="35" id="8Db-c8-kH6"/>
+                <constraint firstItem="r7I-SP-3uj" firstAttribute="top" secondItem="Fm1-Tg-Ru8" secondAttribute="bottom" constant="62" id="B87-Rk-t36"/>
+                <constraint firstItem="r7I-SP-3uj" firstAttribute="leading" secondItem="7fg-iz-P9f" secondAttribute="leading" constant="92" id="DYc-pG-jR3"/>
+                <constraint firstItem="7fg-iz-P9f" firstAttribute="trailing" secondItem="zbB-5F-efF" secondAttribute="trailing" constant="35" id="JiU-HE-9k9"/>
+                <constraint firstItem="RIb-oO-1Mg" firstAttribute="leading" secondItem="7fg-iz-P9f" secondAttribute="leading" constant="35" id="KWm-jn-Ny3"/>
+                <constraint firstItem="zbB-5F-efF" firstAttribute="leading" secondItem="7fg-iz-P9f" secondAttribute="leading" constant="35" id="NAk-XE-zWq"/>
+                <constraint firstItem="7fg-iz-P9f" firstAttribute="trailing" secondItem="r7I-SP-3uj" secondAttribute="trailing" constant="92" id="SKo-Je-8Nx"/>
+                <constraint firstItem="7fg-iz-P9f" firstAttribute="trailing" secondItem="Fm1-Tg-Ru8" secondAttribute="trailing" constant="35" id="gDb-ES-yLL"/>
+                <constraint firstItem="Fm1-Tg-Ru8" firstAttribute="top" secondItem="zbB-5F-efF" secondAttribute="bottom" constant="24" id="xq6-eb-8y2"/>
+                <constraint firstItem="RIb-oO-1Mg" firstAttribute="top" secondItem="7fg-iz-P9f" secondAttribute="top" constant="117" id="zp6-ph-Koo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="7fg-iz-P9f"/>
+            <point key="canvasLocation" x="64.799999999999997" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

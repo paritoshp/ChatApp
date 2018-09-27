@@ -11,7 +11,7 @@ import Firebase
 import JSQMessagesViewController
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet weak var emailIDTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginLabel: UILabel!
@@ -26,31 +26,33 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         navigationItem.title = "ChatApp"
     }
-
-
+    
+    
     @IBAction func submitButtonclicked(_ sender: Any) {
         
-        if isExistingUser {
-            Auth.auth().signIn(withEmail: emailIDTextField.text!, password: passwordTextField.text!) { (user, error) in
-                if ((error?.localizedDescription) != nil) {
-                    // Handle error and show popup
-                }else {
-                    let ContactsListVC = ContactsListViewController()
-                    self.navigationController?.pushViewController(ContactsListVC, animated: false)
-                }
-            }
-        } else {
-            Auth.auth().createUser(withEmail: emailIDTextField.text!, password: passwordTextField.text!) { (authResult, error) in
-                // ...
-                guard (authResult?.user) != nil else {return}
+        Auth.auth().signIn(withEmail: emailIDTextField.text!, password: passwordTextField.text!) { (user, error) in
+            if ((error?.localizedDescription) != nil) {
+                // Handle error and show popup
+                print("Error")
+                self.showAlertPopup(messageTitle: "Error", messageData: error?.localizedDescription ?? "")
+            }else {
                 let ContactsListVC = ContactsListViewController()
                 self.navigationController?.pushViewController(ContactsListVC, animated: false)
             }
         }
     }
-
+    
     @IBAction func ExistingUserClicked(_ sender: Any) {
         self.isExistingUser = true
-        self.loginLabel.text = "Sign in To Your Account"
+        let signInVC = SignInViewController()
+        self.navigationController?.pushViewController(signInVC, animated: false)
+    }
+    
+    func showAlertPopup(messageTitle : String , messageData : String) {
+        
+        let alert = UIAlertController(title: messageTitle, message: messageData, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) { (action:UIAlertAction!) in
+        })
+        self.present(alert, animated: true)
     }
 }
